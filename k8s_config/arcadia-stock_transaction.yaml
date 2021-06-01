@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: arcadia-stock-transaction
-          image: sorinboia/arcadia-stock_transaction:v0.1
+          image: registry.gitlab.com/arcadia-crypto/backend/stock-transaction
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8080
 
 ---
 
@@ -27,8 +27,8 @@ metadata:
   name: arcadia-stock-transaction
 spec:
   ports:
-    - port: 80
-      targetPort: 80
+    - port: 8080
+      targetPort: 8080
       protocol: TCP
       name: http
   selector:

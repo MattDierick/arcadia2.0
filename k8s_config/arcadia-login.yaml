@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: arcadia-login
-          image: sorinboia/arcadia-login:v0.1
+          image: registry.gitlab.com/arcadia-crypto/backend/login:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8080
 
 ---
 
@@ -27,8 +27,8 @@ metadata:
   name: arcadia-login
 spec:
   ports:
-    - port: 80
-      targetPort: 80
+    - port: 8080
+      targetPort: 8080
       protocol: TCP
       name: http
   selector:

@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: arcadia-db
-          image: sorinboia/arcadia-db:v0.1
+          image: registry.gitlab.com/arcadia-crypto/backend/arcadia-db:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 27017
 
 ---
 

@@ -20,6 +20,19 @@ let res = [
         "picture" : "default"
     }),
     db.users.insert({
+        "accountId" : "47808856",
+        "name" : "Matthieu Dierick",
+        "email" : "matt@f5.com",
+        "cash" : 9902.248,
+        "password" : "ilovemama",
+        "stocks" : {
+            "btc" : 2.1,
+            "eth" : 6.5,
+            "ltc" : 56.1
+        },
+        "picture" : "default"
+    }),
+    db.users.insert({
         "accountId" : "85408892",
         "name" : "Satoshi Nakamoto",
         "email" : "satoshi@bitcoin.com",
