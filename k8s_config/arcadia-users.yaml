@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: arcadia-users
-          image: registry.gitlab.com/arcadia-crypto/backend/users:latest
+          image: registry.gitlab.com/arcadia-crypto/backend/users:nonroot
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

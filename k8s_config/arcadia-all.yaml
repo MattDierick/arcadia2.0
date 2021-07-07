@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
         - name: arcadia-frontend
-          image: registry.gitlab.com/arcadia-crypto/frontend:latest
+          image: registry.gitlab.com/arcadia-crypto/frontend:nginxnonroot
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

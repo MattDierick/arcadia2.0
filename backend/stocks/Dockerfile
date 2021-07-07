@@ -1,5 +1,8 @@
 FROM node:12
 
+#Volterra specific non-root user
+USER node
+
 # Create app directory
 WORKDIR /usr/src/app
 
