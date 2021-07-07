@@ -128,7 +128,7 @@ spec:
     spec:
       containers:
         - name: arcadia-stock-transaction
-          image: registry.gitlab.com/arcadia-crypto/backend/stock-transaction
+          image: registry.gitlab.com/arcadia-crypto/backend/stock-transaction:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
